@@ -1,0 +1,7 @@
+id: hello-world
+namespace: zoomcamp
+
+tasks:
+  - id: hello
+    type: io.kestra.plugin.core.log.log
+    message: "Hello World"

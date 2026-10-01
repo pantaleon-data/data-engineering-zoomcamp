@@ -1,5 +1,34 @@
 *.parquet
 
+/exec -l/
+
+# Terraform: local provider/module cache
+**/.terraform/
+.terraform/
+
+# Terraform state: can contain infrastructure metadata and secrets
+*.tfstate
+*.tfstate.*
+.terraform.tfstate.lock.info
+
+# Terraform variable files: may contain secrets or local values
+*.tfvars
+*.tfvars.json
+*.auto.tfvars
+*.auto.tfvars.json
+
+# Terraform crash logs and saved plans
+crash.log
+crash.*.log
+*.tfplan
+tfplan
+
+# Environment and secret files
+.env
+.env.*
+*.pem
+*.key
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]

@@ -27,6 +27,7 @@ services:
       - "8085:80"
     volumes:
       - pgadmin_data:/var/lib/pgadmin
+    
 
 volumes:
   ny_taxi_postgres_data:
